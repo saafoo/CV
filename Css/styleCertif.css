@@ -1,0 +1,58 @@
+body{
+	background-image:url("../Images/backCertif.png");
+	background-repeat: no-repeat;
+	background-position: auto;
+	background-attachment: fixed;
+}
+
+nav {
+	margin: 27px auto 0;
+	position: relative;
+	width: 1200px;
+	height: 50px;
+	border-radius: 8px;
+	font-size: 0;
+}
+
+nav a {
+	line-height: 50px;
+	height: 100%;
+	font-size: 15px;
+	display: inline-block;
+	position: relative;
+	z-index: 1;
+	text-decoration: none;
+	text-transform: uppercase;
+	text-align: center;
+	color: black;
+	cursor: pointer;
+}
+
+nav .animation {
+	position: absolute;
+	height: 100%;
+	top: 0;
+	z-index: 0;
+	transition: all .5s ease 0s;
+	border-radius: 8px;
+}
+
+a:nth-child(1) {
+	width: 100px;
+	margin-left:500px;
+}
+a:nth-child(2) {
+	width: 190px;
+}
+
+nav .start-home, a:nth-child(1):hover~.animation {
+	width: 70px;
+	left: 515px;
+	background-color: red;
+}
+
+nav .start-me-contacter, a:nth-child(2):hover~.animation {
+	width: 100px;
+	left: 645px;
+	background-color: red;
+}
