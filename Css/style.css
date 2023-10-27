@@ -1,0 +1,966 @@
+body{
+	background-image:url("../Images/background.png");
+	background-repeat: no-repeat;
+	background-position: auto;
+	background-attachment: fixed;
+}
+
+nav {
+	margin: 27px auto 0;
+	position: relative;
+	width: 1200px;
+	height: 50px;
+	border-radius: 8px;
+	font-size: 0;
+}
+nav a {
+	line-height: 50px;
+	height: 100%;
+	font-size: 15px;
+	display: inline-block;
+	position: relative;
+	z-index: 1;
+	text-decoration: none;
+	text-transform: uppercase;
+	text-align: center;
+	color: white;
+	cursor: pointer;
+}
+nav .animation {
+	position: absolute;
+	height: 100%;
+	top: 0;
+	z-index: 0;
+	transition: all .5s ease 0s;
+	border-radius: 8px;
+}
+a:nth-child(1) {
+	width: 100px;
+}
+a:nth-child(2) {
+	width: 190px;
+}
+a:nth-child(3) {
+	width: 100px;
+}
+a:nth-child(4) {
+	width: 390px;
+}
+a:nth-child(5) {
+	width: 280px;
+}
+a:nth-child(6) {
+	width: 120px;
+}
+nav .start-home, a:nth-child(1):hover~.animation {
+	width: 80px;
+	left: 10px;
+	background-color: red;
+}
+nav .start-A-propos-de-moi, a:nth-child(2):hover~.animation {
+	width: 150px;
+	left: 120px;
+	background-color: red;
+}
+nav .start-etudes, a:nth-child(3):hover~.animation {
+	width: 100px;
+	left: 290px;
+	background-color: red;
+}
+nav .start-exp, a:nth-child(4):hover~.animation {
+	width: 350px;
+	left: 410px;
+	background-color: red;
+}
+nav .start-competences, a:nth-child(5):hover~.animation {
+	width: 260px;
+	left: 790px;
+	background-color: red;
+}
+nav .start-me-contacter, a:nth-child(6):hover~.animation {
+	width: 120px;
+	left: 1060px;
+	background-color: red;
+}
+
+.bouton {
+    display: flex;                /* Transformation en flexbox */
+    padding:0;                    /* Suppression des marges internes */
+	margin-left:1550px;
+	margin-top:385px
+}
+
+.bouton li {
+    list-style-type: none ;       /* Suppression des puces */
+}
+
+.bouton a {
+    display:flex;                 /* Transformation en block */
+    min-width: 220px;             /* Longeur minimale des liens */
+	min-height: 50px;			  /* Largeur minimale des liens */
+	justify-content: center;
+    align-items: center;
+	font-size:30px;
+    margin: 0.5rem;               /* Marges externes */
+    padding: 0.4rem 0;            /* Marges internes */
+    background-color: white;      /* Arrière-plan */
+    color: black;                 /* Couleur du texte */
+    text-decoration: none;        /* Suppression du soulignement */
+    border: 2px solid #fff;       /* Ajout d'une bordure */
+    border-radius: 4px;           /* Arrondis des bordures */
+    transition: all 1s ;          /* Ajout des effets de transition */
+	font-family: Trebuchet MS;    /* Police */
+}
+
+.bouton a:hover,				   /* Effet du curseur de la souris sur les boutons du menu*/
+.bouton a:hover.actif{
+    background-color:#ff4545;
+    color: black;
+    border-color: black;
+}
+
+/* Contact.html */
+.tel {
+	width:5%;
+	height:8%;
+	text-align:center;
+	border-radius: 4px;
+	margin-left:910px;
+	margin-top:180px;
+	background-color:white;
+}
+
+.mail {
+	width:5%;
+	height:8%;
+	text-align:center;
+	background-color:white;
+	border-radius: 4px;
+	margin-left:910px;
+	margin-top:300px;
+}
+/* Fin Contact.html */
+
+/* Langues */
+#SkillBoxLang {
+    font-size: 20px;
+    font-family: 'Indie Flower', cursive;
+    width: 20%;
+    margin: 50px;
+	margin-left:1120px;
+	margin-top:-160px;
+    //border: 1px solid #cdcdcd;
+    padding: 10px;
+    border-radius:20px;
+    -webkit-border-radius:20px;
+    -moz-border-radius:20px;  
+}
+
+.imgFR {
+	margin-top:100px;
+	margin-left:1250px;
+}
+
+.imgEN {
+	margin-top:60px;
+	margin-left:1250px;
+}
+
+.SkillBarLang {
+    width: 90%;
+    height: 50px;
+    position: relative;
+    margin: 20px auto;
+}
+
+#Skill-FR {
+    width: 100%;
+    animation: Animate-FR 4s;
+    -webkit-animation: Animate-FR 4s;
+    -moz-animation: Animate-FR 4s;
+	margin-top:-15px;
+    height: 50px;
+    position: absolute;
+    background-color: lightblue;
+}
+
+@keyframes Animate-FR {
+    from {
+    width: 10px;
+}
+
+to {
+    width: 100%
+}
+
+}@-webkit-keyframes Animate-FR {
+    from {
+    width: 10px;
+}
+to {
+    width: 100%
+}
+
+}@-moz-keyframes Animate-FR {
+    from {
+    width: 10px;
+}
+
+to {
+    width: 100%
+}
+
+}@-o-keyframes Animate-FR {
+    from {
+    width: 10px;
+}
+
+to {
+    width: 100%
+}
+
+}#Skill-EN {
+    animation: Animate-EN 5s;
+    -webkit-animation: Animate-EN 5s;
+    -moz-animation: Animate-EN 5s;
+	margin-top:15px;
+    width: 30%;
+    height: 50px;
+    position: absolute;
+    background-color: red;
+}
+@keyframes Animate-EN {
+    from {
+    width: 10px;
+}
+
+to {
+    width: 30%
+}
+}@-webkit-keyframes Animate-EN {
+    from {
+    width: 10px;
+}
+
+to {
+    width: 30%
+}
+
+}@-moz-keyframes Animate-EN {
+    from {
+    width: 10px;
+}
+
+to {
+    width: 30%
+}
+
+}@-o-keyframes Animate-EN {
+    from {
+    width: 10px;
+}
+
+to {
+    width: 30%
+}
+
+}.Skill-AreaLang {
+    z-index: 1;
+    float: left;
+    //position: absolute;
+    margin-top: 15px;
+    margin-left: 15px;
+    color: #fff;
+    //font-family: Lato-Regular, sans-serif;
+    font-size: 18px;
+}
+
+.PercentTextLang {
+    z-index: 3;
+    position: absolute;
+    padding-right: 15px;
+    margin-top: 15px;
+    float: left;
+    color: #fff;
+    //font-family: Lato-Regular, sans-serif;
+    font-size: 18px;
+}
+/* Fin Langues */
+
+/* Compétences.html */
+.tableRES {
+	width:15%;
+	height:8%;
+	text-align:center;
+	border-radius: 4px;
+	margin-left:810px;
+	margin-top:110px;
+	background-color:#ff4545;
+	color:white;
+}
+
+.tablePROG {
+	width:22%;
+	height:8%;
+	text-align:center;
+	border-radius: 4px;
+	margin-left:780px;
+	margin-top:80px;
+	background-color:#ff4545;
+	color:white;
+}
+
+.tableBUR {
+	width:22%;
+	height:8%;
+	text-align:center;
+	border-radius: 4px;
+	margin-left:780px;
+	margin-top:70px;
+	background-color:#ff4545;
+	color:white;
+}
+
+#SkillBox {
+    font-size: 20px;
+    font-family: 'Indie Flower', cursive;
+    width: 80%;
+    margin: 40px;
+	margin-left:1px;
+	margin-top:-300px;
+    //border: 1px solid #cdcdcd;
+    padding: 10px;
+    border-radius:20px;
+    -webkit-border-radius:20px;
+    -moz-border-radius:20px;  
+} 
+
+.imgVM {
+	margin-top:50px;
+	margin-left:120px;
+}
+
+.imgLX {
+	margin-top:30px;
+	margin-left:120px;
+}
+
+.imgWIN {
+	margin-top:40px;
+	margin-left:120px;
+}
+
+.imgAD {
+	margin-top:40px;
+	margin-left:120px;
+}	
+
+.imgHTML {
+	margin-top:50px;
+	margin-left:120px;
+}
+
+.imgCSS {
+	margin-top:30px;
+	margin-left:120px;
+}
+
+.imgPY {
+	margin-top:30px;
+	margin-left:120px;
+}
+
+.imgNote {
+	margin-top:-50px;
+	margin-left:180px;
+}
+
+.imgBATCH {
+	margin-top:30px;
+	margin-left:120px;
+}
+
+.imgBD {
+	margin-top:20px;
+	margin-left:120px;
+}
+
+.img365 {
+	margin-top:30px;
+	margin-left:120px;
+}
+
+.imgProc {
+	margin-top:40px;
+	margin-left:120px;
+}
+
+.SkillBar {
+    width: 90%;
+    height: 50px;
+    position: relative;
+    margin: 20px auto;
+}
+
+#Skill-VM {
+	width: 50%;
+    animation: Animate-VM 5s;
+    -webkit-animation: Animate-VM 5s;
+    -moz-animation: Animate-VM 5s;
+    margin-top:-40px;
+    height: 50px;
+    position: absolute;
+    background-color: #CECECE;
+}
+
+@keyframes Animate-VM {
+    from {
+    width: 10px;
+}
+to {
+    width: 50%}
+}@-webkit-keyframes Animate-VM {
+    from {
+    width: 10px;
+}
+to {
+    width: 50%}
+}@-moz-keyframes Animate-VM {
+    from {
+    width: 10px;
+}
+to {
+    width: 50%}
+	
+}#Skill-LINUX {
+	width: 50%;
+    animation: Animate-LINUX 5s;
+    -webkit-animation: Animate-LINUX 5s;
+    -moz-animation: Animate-LINUX 5s;
+    margin-top:-30px;
+    height: 50px;
+    position: absolute;
+    background-color: #ffd664;
+}
+
+@keyframes Animate-LINUX {
+    from {
+    width: 10px;
+}
+to {
+    width: 50%}
+}@-webkit-keyframes Animate-LINUX {
+    from {
+    width: 10px;
+}
+to {
+    width: 50%}
+}@-moz-keyframes Animate-LINUX {
+    from {
+    width: 10px;
+}
+to {
+    width: 50%}
+
+}#Skill-WIN {
+	width: 50%;
+    animation: Animate-WIN 5s;
+    -webkit-animation: Animate-WIN 5s;
+    -moz-animation: Animate-WIN 5s;
+    margin-top:-10px;
+    height: 50px;
+    position: absolute;
+    background-color: #00b4f2;
+}
+
+@keyframes Animate-WIN {
+    from {
+    width: 10px;
+}
+to {
+    width: 50%}
+}@-webkit-keyframes Animate-WIN {
+    from {
+    width: 10px;
+}
+to {
+    width: 50%}
+}@-moz-keyframes Animate-WIN {
+    from {
+    width: 10px;
+}
+to {
+    width: 50%}
+	
+}#Skill-AD {
+	width: 50%;
+    animation: Animate-AD 5s;
+    -webkit-animation: Animate-AD 5s;
+    -moz-animation: Animate-AD 5s;
+    margin-top:10px;
+    height: 50px;
+    position: absolute;
+    background-color: #004ce8;
+}
+
+@keyframes Animate-AD {
+    from {
+    width: 10px;
+}
+to {
+    width: 50%}
+}@-webkit-keyframes Animate-AD {
+    from {
+    width: 10px;
+}
+to {
+    width: 50%}
+}@-moz-keyframes Animate-AD {
+    from {
+    width: 10px;
+}
+to {
+    width: 50%}
+
+}#Skill-HTML {
+    width: 50%;
+    animation: Animate-HTML 5s;
+    -webkit-animation: Animate-HTML 5s;
+    -moz-animation: Animate-HTML 5s;
+    margin-top:-80px;
+    height: 50px;
+    position: absolute;
+    background-color: #ff4c1e;
+}
+
+@keyframes Animate-HTML {
+    from {
+    width: 10px;
+}
+to {
+    width: 50%}
+}@-webkit-keyframes Animate-HTML {
+    from {
+    width: 10px;
+}
+to {
+    width: 50%}
+}@-moz-keyframes Animate-HTML {
+    from {
+    width: 10px;
+}
+to {
+    width: 50%}
+
+}#Skill-CSS {
+	width: 50%;
+    animation: Animate-CSS 5s;
+    -webkit-animation: Animate-CSS 5s;
+    -moz-animation: Animate-CSS 5s;
+    margin-top:-75px;
+    height: 50px;
+    position: absolute;
+    background-color: #004ce8;
+}
+
+@keyframes Animate-CSS {
+    from {
+    width: 10px;
+}
+to {
+    width: 50%}
+}@-webkit-keyframes Animate-CSS {
+    from {
+    width: 10px;
+}
+to {
+    width: 50%}
+}@-moz-keyframes Animate-CSS {
+    from {
+    width: 10px;
+}
+to {
+    width: 50%}
+
+}#Skill-PYHTON {
+	width: 50%;
+    animation: Animate-PYHTON 5s;
+    -webkit-animation: Animate-PYHTON 5s;
+    -moz-animation: Animate-PYHTON 5s;
+    margin-top:-140px;
+    height: 50px;
+    position: absolute;
+    background-color: #3772a2;
+}
+
+@keyframes Animate-PYHTON {
+    from {
+    width: 10px;
+}
+to {
+    width: 50%}
+}@-webkit-keyframes Animate-PYHTON {
+    from {
+    width: 10px;
+}
+to {
+    width: 50%}
+}@-moz-keyframes Animate-PYHTON {
+    from {
+    width: 10px;
+}
+to {
+    width: 50%}
+
+}#Skill-BATCH {
+	width: 50%;
+    animation: Animate-BATCH 5s;
+    -webkit-animation: Animate-BATCH 5s;
+    -moz-animation: Animate-BATCH 5s;
+    margin-top:10px;
+    height: 50px;
+    position: absolute;
+    background-color: #f44336;
+}
+
+@keyframes Animate-BATCH {
+    from {
+    width: 10px;
+}
+to {
+    width: 50%}
+}@-webkit-keyframes Animate-BATCH {
+    from {
+    width: 10px;
+}
+to {
+    width: 50%}
+}@-moz-keyframes Animate-BATCH {
+    from {
+    width: 10px;
+}
+to {
+    width: 50%}
+
+}#Skill-BD {
+	width: 50%;
+    animation: Animate-BD 5s;
+    -webkit-animation: Animate-BD 5s;
+    -moz-animation: Animate-BD 5s;
+    margin-top:-60px;
+    height: 50px;
+    position: absolute;
+    background-color: #af2243;
+}
+
+@keyframes Animate-BD {
+    from {
+    width: 10px;
+}
+to {
+    width: 50%}
+}@-webkit-keyframes Animate-BD {
+    from {
+    width: 10px;
+}
+to {
+    width: 50%}
+}@-moz-keyframes Animate-BD {
+    from {
+    width: 10px;
+}
+to {
+    width: 50%}
+
+}#Skill-365 {
+	width: 50%;
+    animation: Animate-365 5s;
+    -webkit-animation: Animate-365 5s;
+    -moz-animation: Animate-365 5s;
+    margin-top:130px;
+    height: 50px;
+    position: absolute;
+    background-color: #01D758;
+}
+
+@keyframes Animate-365 {
+    from {
+    width: 10px;
+}
+to {
+    width: 50%}
+}@-webkit-keyframes Animate-365 {
+    from {
+    width: 10px;
+}
+to {
+    width: 50%}
+}@-moz-keyframes Animate-365 {
+    from {
+    width: 10px;
+}
+to {
+    width: 50%}
+
+}#Skill-Rédac {
+	width: 50%;
+    animation: Animate-Rédac 5s;
+    -webkit-animation: Animate-Rédac 5s;
+    -moz-animation: Animate-Rédac 5s;
+    margin-top:150px;
+    height: 50px;
+    position: absolute;
+    background-color: #d4ac0d;
+}
+
+@keyframes Animate-Rédac {
+    from {
+    width: 10px;
+}
+to {
+    width: 50%}
+}@-webkit-keyframes Animate-Rédac {
+    from {
+    width: 10px;
+}
+to {
+    width: 50%}
+}@-moz-keyframes Animate-Rédac {
+    from {
+    width: 10px;
+}
+to {
+    width: 50%}
+
+}.Skill-Area {
+    z-index: 1;
+    float: left;
+    //position: absolute;
+    margin-top: 15px;
+    margin-left: 15px;
+    text-shadow: none;
+    color: #fff;
+    //font-family: Lato-Regular, sans-serif;
+    font-size: 18px;
+}
+
+.certif {
+    display: flex;                /* Transformation en flexbox */
+    padding:0;                    /* Suppression des marges internes */
+	margin-left:1400px;
+	margin-top:-1080px;
+	position:fixed;
+}
+
+.certif a {
+    display:block;                /* Transformation en block */
+    min-width: 280px;             /* Largeur minimale des liens */
+	min-height: 50px;
+	font-size:30px;
+	justify-content: center;
+    align-items: center;
+    margin: 0.5rem;               /* Marges externes */
+    padding: 0.4rem 0;            /* Marges internes */
+    text-align: center;           /* Centrage du texte */   
+    background-color: white;      /* Arrière-plan */
+    color: black;                 /* Couleur du texte */
+    text-decoration: none;        /* Suppression du soulignement */
+    border: 2px solid #fff;       /* Ajout d'une bordure */
+    border-radius: 4px;           /* Arrondis des bordures */
+    transition: all 1s;          /* Ajout des effets de transition */
+	font-family: Trebuchet MS;    /* Police */
+}
+
+.certif a:hover,				  /* Effet du curseur de la souris sur les boutons du menu*/
+.certif a:hover.actif{
+    background-color:#ff4545;
+    color: black;
+    border-color: black;
+}
+
+.menuCREA {
+		display: flex;                /* Transformation en flexbox */
+		padding:0;                    /* Suppression des marges internes */
+		margin-left:1400px;
+		margin-top:-980px;
+		position:fixed;
+      }
+    .menuCREA li {
+		display:block;                /* Transformation en block */
+		width: 280px;            	 /* Largeur minimale des liens */
+		height: 40px;
+		font-size:30px;
+		justify-content: center;
+		align-items: center;
+		margin: 0.5rem;               /* Marges externes */
+		padding: 0.4rem 0;            /* Marges internes */
+		text-align: center;           /* Centrage du texte */   
+		background-color: white;      /* Arrière-plan */
+		color: black;                 /* Couleur du texte */
+		border-radius: 4px;           /* Arrondis des bordures */
+		font-family: Trebuchet MS;    /* Police */
+      }
+	      .menuCREA a {
+		color:white;
+		text-decoration:none;			/* Suppression du soulignement */
+      }
+    .sub-menuCREA {
+        transform: scale(0);
+        transform-origin: top center;
+        transition: all 300ms ease-in-out;
+		
+      }
+    .sub-menuCREA li {
+        font-size: 20px;
+        background: none;
+        padding: 8px;
+        color: white;
+        transform: scale(0);
+        transform-origin: top center;
+        transition: all 300ms ease-in-out;
+		list-style-type: none;       /* Suppression des puces */
+      }
+    .sub-menuCREA li:last-child {
+        border-bottom: 0;
+      }
+
+    .menuCREA li:hover .sub-menuCREA li {
+        transform: scale(1);
+      }
+    .menuCREA li:hover .sub-menuCREA {
+        transform: scale(1);
+      }
+
+
+/* Fin compétences.html */
+
+.boutonHaut a {
+    display:flex;                 /* Transformation en block */
+    min-width: 260px;             /* Longeur minimale des liens */
+	min-height: 50px;			  /* Largeur minimale des liens */
+	justify-content: center;
+    align-items: center;
+	font-size:20px;
+    margin: 0.5rem;               /* Marges externes */
+    padding: 0.4rem 0;            /* Marges internes */
+    background-color: #ff4545;      /* Arrière-plan */
+    color: white;                 /* Couleur du texte */
+    text-decoration: none;        /* Suppression du soulignement */
+    border-radius: 4px;           /* Arrondis des bordures */
+	font-family: Trebuchet MS;    /* Police */
+	position:fixed;
+	top:90%;
+	margin-left:1600px;
+}
+
+/* exp.html */
+.tableEXP {
+	width:50%;
+	height:8%;
+	text-align:center;
+	border-radius: 4px;
+	margin-left:520px;
+	margin-top:100px;
+	background-color:#ff4545;
+	color:white;
+}
+
+	.menuEXP {
+        display: inline-block;
+      }
+    .menuEXP li {
+        float: left;
+        color: #ff4545;
+        width: 600px;
+        height: 50px;
+        line-height: 50px;
+		margin-top:20px;
+        background: black;
+        cursor: pointer;
+        font-size: 30px;
+		list-style-type: none;       /* Suppression des puces */
+		text-align:center;
+      }
+    .sub-menuEXP {
+        transform: scale(0);
+        transform-origin: top center;
+        transition: all 300ms ease-in-out;
+		
+      }
+    .sub-menuEXP li {
+        font-size: 20px;
+        background: none;
+        padding: 8px;
+        color: white;
+        transform: scale(0);
+        transform-origin: top center;
+        transition: all 300ms ease-in-out;
+		list-style-type: none;       /* Suppression des puces */
+      }
+    .sub-menuEXP li:last-child {
+        border-bottom: 0;
+      }
+
+    .menuEXP li:hover .sub-menuEXP li {
+        transform: scale(1);
+      }
+    .menuEXP li:hover .sub-menuEXP {
+        transform: scale(1);
+      }
+
+.tableSTAGES {
+	width:15%;
+	height:8%;
+	text-align:center;
+	border-radius: 4px;
+	margin-left:810px;
+	margin-top:350px;
+	background-color:#ff4545;
+	color:white;
+}
+	  
+	.menuSTAGE {
+        display: inline-block;
+      }
+    .menuSTAGE li {
+        float: left;
+        color: #ff4545;
+        width: 600px;
+        height: 50px;
+        line-height: 50px;
+		margin-top:20px;
+        background: black;
+        cursor: pointer;
+        font-size: 30px;
+		list-style-type: none ;       /* Suppression des puces */
+		text-align:center;
+      }
+    .sub-menuSTAGE {
+        transform: scale(0);
+        transform-origin: top center;
+        transition: all 300ms ease-in-out;
+		
+      }
+    .sub-menuSTAGE li {
+        font-size: 20px;
+        background: none;
+        padding: 8px;
+        color: white;
+        transform: scale(0);
+        transform-origin: top center;
+        transition: all 300ms ease-in-out;
+		list-style-type: none ;       /* Suppression des puces */
+      }
+    .sub-menuSTAGE li:last-child {
+        border-bottom: 0;
+      }
+    .sub-menuSTAGE li:hover {
+        background: black;
+      }
+    .menuSTAGE li:hover .sub-menuSTAGE li {
+        transform: scale(1);
+      }
+    .menuSTAGE li:hover .sub-menuSTAGE {
+        transform: scale(1);
+      }
+/* Fin exp.html */
