@@ -1,0 +1,201 @@
+body{
+	background-image:url("../Images/back.png");
+	background-repeat: no-repeat;
+	background-position: 500px;
+	background-attachment: fixed;
+}
+
+.menu {
+    display: flex;                /* Transformation en flexbox */
+    padding:0;                    /* Suppression des marges internes */
+    background-color:lightgrey;   /* Ajout de la couleur d'arrière-plan */
+    justify-content: space-around;/* Alignements des liens dans le menu */
+}
+
+.menu li {
+    list-style-type: none ;       /* Suppression des puces */
+}
+
+.menu a {
+    display:block;                /* Transformation en block */
+    min-width: 120px;             /* Largeur minimale des liens */   
+    margin: 0.5rem;               /* Marges externes */
+    padding: 0.4rem 0;            /* Marges internes */
+    text-align: center;           /* Centrage du texte */   
+    background-color: #ff6600;    /* Arrière-plan */
+    color: #fff;                  /* Couleur du texte */
+    text-decoration: none;        /* Suppression du soulignement */
+    border: 2px solid #fff;       /* Ajout d'une bordure */
+    border-radius: 4px;           /* Arrondis des bordures */
+    transition: all 1s ;          /* Ajout des effets de transition */
+	font-family: Trebuchet MS;    /* Police */
+}
+
+.menu a:hover,					  /* Effet du curseur de la souris sur les boutons du menu*/
+.menu a:hover.actif{
+    background-color:lightgrey;
+    color: #ff6600;
+    border-color: #ff6600;
+}
+
+.boutonHaut {					  /* Bouton Revenir en haut de la page */ 
+    min-width: 190px;             /* Largeur minimale des liens */   
+    padding: 0.9rem 0.9rem;       /* Marges internes */
+    text-align: center;           /* Centrage du texte */   
+    background-color: #ff6600;    /* Arrière-plan */
+    text-decoration: none;        /* Suppression du soulignement */
+    border-radius: 10px;          /* Arrondis des bordures */
+	font-family: Trebuchet MS;    /* Police */
+	right:100px;
+	top:80%;
+	position:fixed;
+}
+
+.table1 {
+	width:15%;
+	height:8%;
+	text-align:center;
+	border-radius: 4px;
+	margin-left:810px;
+	background-color:#ff6600;
+	color:white;
+}
+
+.table2 { 
+	width:100%;
+	margin-top:80px;
+}
+
+.maps {							   /* Carte Google maps */ 
+	width:100%;
+	position:absolute;
+}
+
+td {
+	width:100%;
+	padding-bottom:60px;
+	margin-top:800px;
+}
+
+th {
+	font-family:Trebuchet MS;
+}
+
+.tablePiano {
+	width:100%;
+	margin-top:80px;
+	
+}
+
+.tableBBQ {
+	width:100%;
+	margin-top:80px;
+}
+
+.tableMachine {
+	width:100%;
+	margin-top:80px;
+}
+
+.tableSecheuse {
+	width:100%;
+	margin-top:80px;
+}
+
+.tableFrigo {
+	width:100%;
+	margin-top:80px;
+}
+
+/* Code effet de zoom sur les images des produits (produits.html) */
+.zoom {
+width: 320px;
+height: 240px;
+}
+
+.image {
+width: 200%;
+height: 200%;
+}
+
+.image img {
+/* La transition s'applique à la fois sur la largeur et la hauteur, avec une durée d'une seconde. */
+-webkit-transition: all 1s ease; /* Sur Safari et Chrome */
+-moz-transition: all 1s ease; /* Sur Firefox */
+transition: all 1s ease; /* Durée de transition */
+}
+
+.image:hover img {
+/* L'image est grossie de 1X50% */
+-webkit-transform:scale(1.50); /* Sur Safari et Chrome */
+-moz-transform:scale(1.50); /* Sur Firefox */
+transform:scale(1.50);
+}
+/* Fin code effet de zoom image */
+
+/* Code effet bannière */
+.container {
+	overflow: hidden;
+	white-space: nowrap;
+	box-shadow: 0px 15px 10px -5px #777; /* Ombre de la bannière */
+	margin: 50px auto;
+}
+
+.conteneur1{
+    overflow: hidden;
+    max-width: auto;
+    box-shadow: 0px 15px 10px -5px #777; /* Ombre de la bannière */
+}
+
+.banniere{
+    width: 4215px;
+    height: 400px;
+    background-image: url("../Images/bannieres.png");
+    background-size: contain;
+    animation: 10s linear infinite alternate defilement;
+}
+
+@keyframes defilement{
+    0%{transform: translate(0,0);}
+    100%{transform: translate(-2450px,0);}
+}
+
+.banniere:hover{
+    animation-play-state: paused; /* Arrêt défilement des images quand le curseur souris est sur la banniere*/
+}
+/* Fin code effet bannière */
+
+/* Code pied de page */
+.footer-basic {
+  padding:40px;
+  background-color:#ff6600;
+  height:100px;
+  text-align: center;
+}
+
+.footer-basic .copyright {
+  margin-top:15px;
+  text-align:center;
+  font-size:15px;
+  color:white;
+}
+/* Fin code pied de page */
+
+/* Code bouton Ajouter au panier */
+.bouton {
+    background-color: #ff6600;
+    color: #fff;
+    position: relative;
+    padding: 0.75rem 1.2rem;
+    font-size: 1.2rem;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 10px 10px 5px #656565;
+    transition-property: top, box-shadow, transform;
+    transition-duration: 0.2s, 0.2s, 1s;
+}
+.bouton:hover {
+    top: 0px;
+    box-shadow: 5px 5px 5px 0px #656565;
+}
+/* Fin code bouton Ajouter au panier */
