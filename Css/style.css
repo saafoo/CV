@@ -331,7 +331,7 @@ to {
 	margin-left:810px;
 	margin-top:110px;
 	background-color:#ff4545;
-	color:black;
+	color:white;
 }
 
 .tablePROG {
@@ -912,7 +912,7 @@ to {
         height: 50px;
         line-height: 50px;
 		margin-top:20px;
-        background: black;
+        background: lightgrey;
         cursor: pointer;
         font-size: 30px;
 		list-style-type: none;       /* Suppression des puces */
@@ -928,7 +928,7 @@ to {
         font-size: 20px;
         background: none;
         padding: 8px;
-        color: white;
+        color: black;
         transform: scale(0);
         transform-origin: top center;
         transition: all 300ms ease-in-out;
@@ -966,7 +966,7 @@ to {
         height: 50px;
         line-height: 50px;
 		margin-top:20px;
-        background: black;
+        background: lightgrey;
         cursor: pointer;
         font-size: 30px;
 		list-style-type: none ;       /* Suppression des puces */
@@ -982,7 +982,7 @@ to {
         font-size: 20px;
         background: none;
         padding: 8px;
-        color: white;
+        color: black;
         transform: scale(0);
         transform-origin: top center;
         transition: all 300ms ease-in-out;
