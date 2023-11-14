@@ -1,18 +1,48 @@
+@import url('https://fonts.googleapis.com/css2?family=Indie+Flower&family=Lato');
+
+html{
+    min-height: 100%;
+}
+
 body{
-	background-image:url("../Images/background.png");
+	background-image:url("../Images/4.png");
 	background-repeat: no-repeat;
 	background-position: auto;
 	background-attachment: fixed;
+    height: 100%;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    position: relative;
+}
+
+@media screen and (max-width: 1260px) {
+    body{
+        padding-bottom: 25px;
+    }
 }
 
 nav {
-	margin: 27px auto 0;
+    padding-top: 27px;
 	position: relative;
-	width: 1200px;
+	width: 100%;
 	height: 50px;
 	border-radius: 8px;
 	font-size: 0;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
 }
+
+@media screen and (max-width: 1260px) {
+    nav{
+        flex-direction: column;
+        height: auto;
+        align-items: center;
+    }
+}
+
+
 nav a {
 	line-height: 50px;
 	height: 100%;
@@ -23,75 +53,77 @@ nav a {
 	text-decoration: none;
 	text-transform: uppercase;
 	text-align: center;
-	color: white;
+	color: black;
 	cursor: pointer;
+    border-radius: 10px;
+    margin: 0 5px;
+    padding: 0 20px;
+    white-space: nowrap;
 }
-nav .animation {
-	position: absolute;
-	height: 100%;
-	top: 0;
-	z-index: 0;
-	transition: all .5s ease 0s;
-	border-radius: 8px;
+
+nav a:hover {
+    background-color: lightgrey;
 }
-a:nth-child(1) {
-	width: 100px;
+
+nav a.active {
+    background-color: red;
 }
-a:nth-child(2) {
-	width: 190px;
+
+.texte-home,
+.texte-home-grand {
+    font-family: monospace;
+    color: black;
+    font-size: 45px;
 }
-a:nth-child(3) {
-	width: 100px;
+
+.texte-home-grand {
+    font-size: 50px;
 }
-a:nth-child(4) {
-	width: 390px;
+
+.texte-bold{
+    font-weight: bolder;
 }
-a:nth-child(5) {
-	width: 280px;
+
+.bloc-align-centre{
+    text-align: center;
+    margin-top: 150px;
+    margin-bottom: 110px;
 }
-a:nth-child(6) {
-	width: 120px;
+
+.bloc-align-gauche{
+    padding: 0 80px;
+    margin: 0;
+    margin-bottom: 10px;
 }
-nav .start-home, a:nth-child(1):hover~.animation {
-	width: 80px;
-	left: 10px;
-	background-color: red;
+
+@media screen and (max-width: 1260px) {
+    .bloc-align-gauche{
+        text-align: center;
+    }
 }
-nav .start-A-propos-de-moi, a:nth-child(2):hover~.animation {
-	width: 150px;
-	left: 120px;
-	background-color: red;
+
+
+/* .bloc-align-gauche + .bloc-align-gauche{
+    margin-top: 220px;
+} */
+
+.bouton-wrapper{
+    display: flex;
+    justify-content: flex-end;
+    margin-bottom: 45px;
+    margin-right: 80px;
 }
-nav .start-etudes, a:nth-child(3):hover~.animation {
-	width: 100px;
-	left: 290px;
-	background-color: red;
-}
-nav .start-exp, a:nth-child(4):hover~.animation {
-	width: 350px;
-	left: 410px;
-	background-color: red;
-}
-nav .start-competences, a:nth-child(5):hover~.animation {
-	width: 260px;
-	left: 790px;
-	background-color: red;
-}
-nav .start-me-contacter, a:nth-child(6):hover~.animation {
-	width: 120px;
-	left: 1060px;
-	background-color: red;
+
+.a-propos .bouton-wrapper{
+ position: absolute;
+ right: 80px;
+ top: 435px;   
 }
 
 .bouton {
-    display: flex;                /* Transformation en flexbox */
+    display: inline-flex;                /* Transformation en flexbox */
     padding:0;                    /* Suppression des marges internes */
-	margin-left:1550px;
-	margin-top:385px
-}
-
-.bouton li {
-    list-style-type: none ;       /* Suppression des puces */
+    flex-direction: column;
 }
 
 .bouton a {
@@ -103,10 +135,10 @@ nav .start-me-contacter, a:nth-child(6):hover~.animation {
 	font-size:30px;
     margin: 0.5rem;               /* Marges externes */
     padding: 0.4rem 0;            /* Marges internes */
-    background-color: white;      /* Arrière-plan */
+    background-color: lightgrey;      /* Arrière-plan */
     color: black;                 /* Couleur du texte */
     text-decoration: none;        /* Suppression du soulignement */
-    border: 2px solid #fff;       /* Ajout d'une bordure */
+    border: 2px solid black;       /* Ajout d'une bordure */
     border-radius: 4px;           /* Arrondis des bordures */
     transition: all 1s ;          /* Ajout des effets de transition */
 	font-family: Trebuchet MS;    /* Police */
@@ -117,6 +149,16 @@ nav .start-me-contacter, a:nth-child(6):hover~.animation {
     background-color:#ff4545;
     color: black;
     border-color: black;
+}
+
+.copyright{
+    position: absolute;
+    width: 100%;
+    bottom: 5px;
+    color:#ff4545;
+    font-size:15px;
+    font-family:calibri;
+    text-align: center;
 }
 
 /* Contact.html */
@@ -143,27 +185,14 @@ nav .start-me-contacter, a:nth-child(6):hover~.animation {
 
 /* Langues */
 #SkillBoxLang {
+    position: absolute;
     font-size: 20px;
     font-family: 'Indie Flower', cursive;
     width: 20%;
-    margin: 50px;
-	margin-left:1120px;
-	margin-top:-160px;
-    //border: 1px solid #cdcdcd;
     padding: 10px;
     border-radius:20px;
-    -webkit-border-radius:20px;
-    -moz-border-radius:20px;  
-}
-
-.imgFR {
-	margin-top:100px;
-	margin-left:1250px;
-}
-
-.imgEN {
-	margin-top:60px;
-	margin-left:1250px;
+    top: 630px;
+    right: 200px;
 }
 
 .SkillBarLang {
@@ -182,6 +211,8 @@ nav .start-me-contacter, a:nth-child(6):hover~.animation {
     height: 50px;
     position: absolute;
     background-color: lightblue;
+    display: flex;
+    justify-content: space-between;
 }
 
 @keyframes Animate-FR {
@@ -224,10 +255,12 @@ to {
     -webkit-animation: Animate-EN 5s;
     -moz-animation: Animate-EN 5s;
 	margin-top:15px;
-    width: 30%;
+    width: 40%;
     height: 50px;
     position: absolute;
     background-color: red;
+    display: flex;
+    justify-content: space-between;
 }
 @keyframes Animate-EN {
     from {
@@ -235,7 +268,7 @@ to {
 }
 
 to {
-    width: 30%
+    width: 40%
 }
 }@-webkit-keyframes Animate-EN {
     from {
@@ -243,7 +276,7 @@ to {
 }
 
 to {
-    width: 30%
+    width: 40%
 }
 
 }@-moz-keyframes Animate-EN {
@@ -252,7 +285,7 @@ to {
 }
 
 to {
-    width: 30%
+    width: 40%
 }
 
 }@-o-keyframes Animate-EN {
@@ -267,22 +300,24 @@ to {
 }.Skill-AreaLang {
     z-index: 1;
     float: left;
-    //position: absolute;
     margin-top: 15px;
     margin-left: 15px;
-    color: #fff;
-    //font-family: Lato-Regular, sans-serif;
+    color: white;
+    font-family: 'Lato', sans-serif;
     font-size: 18px;
 }
 
-.PercentTextLang {
-    z-index: 3;
+.drapeau{
     position: absolute;
+    left: -60px;
+    top: 5px;
+}
+
+.PercentTextLang {
     padding-right: 15px;
     margin-top: 15px;
-    float: left;
-    color: #fff;
-    //font-family: Lato-Regular, sans-serif;
+    color: white;
+    font-family: 'Lato', sans-serif;
     font-size: 18px;
 }
 /* Fin Langues */
@@ -296,7 +331,7 @@ to {
 	margin-left:810px;
 	margin-top:110px;
 	background-color:#ff4545;
-	color:white;
+	color:black;
 }
 
 .tablePROG {
@@ -740,7 +775,7 @@ to {
     margin-left: 15px;
     text-shadow: none;
     color: #fff;
-    //font-family: Lato-Regular, sans-serif;
+    font-family: 'Lato', sans-serif;
     font-size: 18px;
 }
 
@@ -759,19 +794,19 @@ to {
 	font-size:30px;
 	justify-content: center;
     align-items: center;
-    margin: 0.5rem;               /* Marges externes */
-    padding: 0.4rem 0;            /* Marges internes */
-    text-align: center;           /* Centrage du texte */   
-    background-color: white;      /* Arrière-plan */
-    color: black;                 /* Couleur du texte */
-    text-decoration: none;        /* Suppression du soulignement */
-    border: 2px solid #fff;       /* Ajout d'une bordure */
-    border-radius: 4px;           /* Arrondis des bordures */
-    transition: all 1s;          /* Ajout des effets de transition */
-	font-family: Trebuchet MS;    /* Police */
+    margin: 0.5rem;               	/* Marges externes */
+    padding: 0.4rem 0;            	/* Marges internes */
+    text-align: center;           	/* Centrage du texte */   
+    background-color: lightgrey;    /* Arrière-plan */
+    color: black;                 	/* Couleur du texte */
+    text-decoration: none;        	/* Suppression du soulignement */
+    border: 2px solid black;       	/* Ajout d'une bordure */
+    border-radius: 4px;           	/* Arrondis des bordures */
+    transition: all 1s;          	/* Ajout des effets de transition */
+	font-family: Trebuchet MS;    	/* Police */
 }
 
-.certif a:hover,				  /* Effet du curseur de la souris sur les boutons du menu*/
+.certif a:hover,				  	/* Effet du curseur de la souris sur les boutons du menu*/
 .certif a:hover.actif{
     background-color:#ff4545;
     color: black;
@@ -795,13 +830,14 @@ to {
 		margin: 0.5rem;               /* Marges externes */
 		padding: 0.4rem 0;            /* Marges internes */
 		text-align: center;           /* Centrage du texte */   
-		background-color: white;      /* Arrière-plan */
+		background-color: lightgrey;  /* Arrière-plan */
 		color: black;                 /* Couleur du texte */
+		border: 2px solid black;       /* Ajout d'une bordure */
 		border-radius: 4px;           /* Arrondis des bordures */
 		font-family: Trebuchet MS;    /* Police */
       }
-	      .menuCREA a {
-		color:white;
+	.menuCREA a {
+		color:black;
 		text-decoration:none;			/* Suppression du soulignement */
       }
     .sub-menuCREA {
@@ -811,14 +847,15 @@ to {
 		
       }
     .sub-menuCREA li {
+		border: none;      				 /* Ajout d'une bordure */
         font-size: 20px;
         background: none;
         padding: 8px;
-        color: white;
+        color: none;
         transform: scale(0);
         transform-origin: top center;
         transition: all 300ms ease-in-out;
-		list-style-type: none;       /* Suppression des puces */
+		list-style-type: none;      	 /* Suppression des puces */
       }
     .sub-menuCREA li:last-child {
         border-bottom: 0;
