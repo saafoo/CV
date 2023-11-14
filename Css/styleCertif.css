@@ -1,17 +1,43 @@
+html{
+    min-height: 100%;
+}
+
 body{
 	background-image:url("../Images/backCertif.png");
 	background-repeat: no-repeat;
 	background-position: auto;
 	background-attachment: fixed;
+    height: 100%;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    position: relative;
+}
+
+@media screen and (max-width: 1260px) {
+    body{
+        padding-bottom: 25px;
+    }
 }
 
 nav {
-	margin: 27px auto 0;
+    padding-top: 27px;
 	position: relative;
-	width: 1200px;
+	width: 100%;
 	height: 50px;
 	border-radius: 8px;
 	font-size: 0;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+@media screen and (max-width: 1260px) {
+    nav{
+        flex-direction: column;
+        height: auto;
+        align-items: center;
+    }
 }
 
 nav a {
@@ -24,35 +50,105 @@ nav a {
 	text-decoration: none;
 	text-transform: uppercase;
 	text-align: center;
-	color: black;
+	color: white;
 	cursor: pointer;
+    border-radius: 10px;
+    margin: 0 5px;
+    padding: 0 20px;
+    white-space: nowrap;
 }
 
-nav .animation {
-	position: absolute;
-	height: 100%;
-	top: 0;
-	z-index: 0;
-	transition: all .5s ease 0s;
-	border-radius: 8px;
+nav a:hover {
+    background-color: #ae4e69;
 }
 
-a:nth-child(1) {
-	width: 100px;
-	margin-left:500px;
-}
-a:nth-child(2) {
-	width: 190px;
+nav a.active {
+    background-color: #ae4e69;
 }
 
-nav .start-home, a:nth-child(1):hover~.animation {
-	width: 70px;
-	left: 515px;
-	background-color: red;
+.texte-home,
+.texte-home-grand {
+    font-family: monospace;
+    color: black;
+    font-size: 45px;
 }
 
-nav .start-me-contacter, a:nth-child(2):hover~.animation {
-	width: 100px;
-	left: 645px;
-	background-color: red;
+.texte-home-grand {
+    font-size: 50px;
+}
+
+.texte-bold{
+    font-weight: bolder;
+}
+
+.bloc-align-centre{
+    text-align: center;
+    margin-top: 150px;
+    margin-bottom: 110px;
+}
+
+.bloc-align-gauche{
+    padding: 0 80px;
+    margin: 0;
+    margin-bottom: 10px;
+}
+
+@media screen and (max-width: 1260px) {
+    .bloc-align-gauche{
+        text-align: center;
+    }
+}
+
+.bouton-wrapper{
+    display: flex;
+    justify-content: flex-end;
+    margin-bottom: 45px;
+    margin-right: 80px;
+}
+
+.a-propos .bouton-wrapper{
+ position: absolute;
+ right: 80px;
+ top: 435px;   
+}
+
+.bouton {
+    display: inline-flex;                /* Transformation en flexbox */
+    padding:0;                    /* Suppression des marges internes */
+    flex-direction: column;
+}
+
+.bouton a {
+    display:flex;                 /* Transformation en block */
+    min-width: 220px;             /* Longeur minimale des liens */
+	min-height: 50px;			  /* Largeur minimale des liens */
+	justify-content: center;
+    align-items: center;
+	font-size:30px;
+    margin: 0.5rem;               /* Marges externes */
+    padding: 0.4rem 0;            /* Marges internes */
+    background-color: lightgrey;      /* Arrière-plan */
+    color: black;                 /* Couleur du texte */
+    text-decoration: none;        /* Suppression du soulignement */
+    border: 2px solid black;       /* Ajout d'une bordure */
+    border-radius: 4px;           /* Arrondis des bordures */
+    transition: all 1s ;          /* Ajout des effets de transition */
+	font-family: Trebuchet MS;    /* Police */
+}
+
+.bouton a:hover,				   /* Effet du curseur de la souris sur les boutons du menu*/
+.bouton a:hover.actif{
+    background-color:#ff4545;
+    color: black;
+    border-color: black;
+}
+
+.copyright{
+    position: absolute;
+    width: 100%;
+    bottom: 5px;
+    color:#ae4e69;
+    font-size:15px;
+    font-family:calibri;
+    text-align: center;
 }
