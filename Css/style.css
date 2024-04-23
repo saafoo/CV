@@ -16,9 +16,23 @@ body{
     position: relative;
 }
 
-@media screen and (max-width: 1260px) {
+@media screen and (max-width: 1280px) {
     body{
         padding-bottom: 25px;
+    }
+}
+
+@media screen and (max-width: 1280px) {
+    nav{
+        flex-direction: column;
+        height: auto;
+        align-items: center;
+    }
+}
+
+@media screen and (max-width: 1280px) {
+    .bloc-align-gauche{
+        text-align: center;
     }
 }
 
@@ -33,15 +47,6 @@ nav {
     justify-content: center;
     flex-wrap: wrap;
 }
-
-@media screen and (max-width: 1260px) {
-    nav{
-        flex-direction: column;
-        height: auto;
-        align-items: center;
-    }
-}
-
 
 nav a {
 	line-height: 50px;
@@ -95,13 +100,6 @@ nav a.active {
     margin: 0;
     margin-bottom: 10px;
 }
-
-@media screen and (max-width: 1260px) {
-    .bloc-align-gauche{
-        text-align: center;
-    }
-}
-
 
 /* .bloc-align-gauche + .bloc-align-gauche{
     margin-top: 220px;
