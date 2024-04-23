@@ -16,13 +16,13 @@ body{
     position: relative;
 }
 
-@media screen and (max-width: 1280px) {
+@media screen and (max-width: 1240px) {
     body{
         padding-bottom: 25px;
     }
 }
 
-@media screen and (max-width: 1280px) {
+@media screen and (max-width: 1240px) {
     nav{
         flex-direction: column;
         height: auto;
@@ -30,7 +30,7 @@ body{
     }
 }
 
-@media screen and (max-width: 1280px) {
+@media screen and (max-width: 1240px) {
     .bloc-align-gauche{
         text-align: center;
     }
