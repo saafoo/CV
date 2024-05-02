@@ -16,7 +16,7 @@ body{
     position: relative;
 }
 
-@media screen and (max-width: 1260px) {
+@media only screen and (max-width: 1260px) {
     body{
         padding-bottom: 25px;
     }
@@ -34,7 +34,7 @@ nav {
     flex-wrap: wrap;
 }
 
-@media screen and (max-width: 1260px) {
+@media only screen and (max-width: 1260px) {
     nav{
         flex-direction: column;
         height: auto;
@@ -95,7 +95,7 @@ nav a.active {
     margin-bottom: 10px;
 }
 
-@media screen and (max-width: 1260px) {
+@media only screen and (max-width: 1260px) {
     .bloc-align-gauche{
         text-align: center;
     }
