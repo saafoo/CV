@@ -1,0 +1,487 @@
+@import url('https://fonts.googleapis.com/css2?family=Indie+Flower&family=Lato');
+
+html, body {
+    margin : 0; padding: 0;   /* On supprime les marges inutiles */
+    font-family: 'Lato', sans-serif;
+    background-image:url("../Images/background.png");
+	  background-repeat: no-repeat;
+	  background-position: auto;
+	  background-attachment: fixed;
+    height: 100%;
+    width: 100%;
+    position: relative;
+  }
+  
+  header {
+    padding: 20px;
+    margin-bottom: -30px;
+  }
+  
+nav {
+    padding-top: 27px;
+	  position: relative;
+	  width: 100%;
+	  height: 50px;
+	  border-radius: 8px;
+	  font-size: 0;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+  
+nav a {
+    line-height: 50px;
+	  height: 100%;
+	  font-size: 15px;
+	  display: inline-block;
+	  position: relative;
+	  z-index: 1;
+	  text-decoration: none;
+	  text-transform: uppercase;
+	  text-align: center;
+	  color: white;
+	  cursor: pointer;
+    border-radius: 10px;
+    margin: 0 5px;
+    padding: 0 20px;
+    white-space: nowrap;
+  }
+
+nav a:hover {
+    background-color: #01b300;
+  }
+  
+nav a.active {
+    background-color: #01b300;
+  }
+
+  .texte-home,
+.texte-home-grand {
+    font-size: 50px;
+}
+
+.texte-bold{
+    font-weight: bolder;
+}
+
+.bloc-align-centre{
+    text-align: center;
+    margin-top: 150px;
+    margin-bottom: 110px;
+}
+
+.bloc-align-gauche{
+    padding: 0 80px;
+    margin: 0;
+    margin-bottom: 10px;
+}
+  
+.bouton-wrapper{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 45px;
+    margin-right: 80px;
+}
+
+.bouton {
+    display: inline-flex;          /* Transformation en flexbox */
+    padding:0;                    /* Suppression des marges internes */
+    flex-direction: column;
+}
+
+.bouton a {
+    display:flex;                 /* Transformation en block */
+    min-width: 220px;             /* Longeur minimale des liens */
+	  min-height: 50px;			  /* Largeur minimale des liens */
+	  justify-content: center;
+    align-items: center;
+	  font-size:30px;
+    margin: 0.5rem;               /* Marges externes */
+    padding: 0.4rem 0;            /* Marges internes */
+    background-color: white;      /* Arrière-plan */
+    color: black;                 /* Couleur du texte */
+    text-decoration: none;        /* Suppression du soulignement */
+    border: 2px solid black;       /* Ajout d'une bordure */
+    border-radius: 4px;           /* Arrondis des bordures */
+    transition: all 1s ;          /* Ajout des effets de transition */
+	  font-family: Trebuchet MS;    /* Police */
+}
+
+.bouton a:hover,				   /* Effet du curseur de la souris sur les boutons du menu*/
+.bouton a:hover.actif{
+    background-color:#008800;
+    color: black;
+    border-color: black;
+}
+
+/* Contact.html */
+
+.tele {
+  width: 120px;
+  height: 120px;
+  background-color: none;
+  margin: 150px;
+  margin-bottom: 45px;
+  display: inline-block;
+}
+
+.tele img {
+  width: 100%;
+	text-align:center;
+	border-radius: 4px;
+}
+
+.mail {
+  width: 120px;
+  height: 120px;
+  background-color: none;
+  margin: 150px;
+  margin-bottom: 45px;
+  display: inline-block;
+}
+
+.mail img {
+  width: 100%;
+	text-align:center;
+	border-radius: 4px;
+}
+
+/* Fin Contact.html */
+
+/* Langues */
+#SkillBoxLang {
+  font-size: 20px;
+  font-family: 'Indie Flower', cursive;
+  width: 20%;
+  border-radius:20px;
+  justify-content: center;
+  margin-bottom: 50px;
+  margin-right: 50px;   
+  display: inline-flex;          /* Transformation en flexbox */
+  padding:0;                    /* Suppression des marges internes */
+  flex-direction: column;
+}
+
+.SkillBarLang {
+  width: 90%;
+  height: 50px;
+  position: relative;
+  margin: 20px auto;
+}
+
+#Skill-FR {
+  width: 100%;
+  animation: Animate-FR 4s;
+  -webkit-animation: Animate-FR 4s;
+  -moz-animation: Animate-FR 4s;
+  margin-top:-15px;
+  height: 50px;
+  position: absolute;
+  background-color: lightblue;
+  display: flex;
+  justify-content: space-between;
+}
+
+@keyframes Animate-FR {
+  from {
+  width: 10px;
+}
+
+to {
+  width: 100%
+}
+
+}@-webkit-keyframes Animate-FR {
+  from {
+  width: 10px;
+}
+to {
+  width: 100%
+}
+
+}@-moz-keyframes Animate-FR {
+  from {
+  width: 10px;
+}
+
+to {
+  width: 100%
+}
+
+}@-o-keyframes Animate-FR {
+  from {
+  width: 10px;
+}
+
+to {
+  width: 100%
+}
+
+}#Skill-EN {
+  animation: Animate-EN 5s;
+  -webkit-animation: Animate-EN 5s;
+  -moz-animation: Animate-EN 5s;
+  margin-top:15px;
+  width: 40%;
+  height: 50px;
+  position: absolute;
+  background-color: red;
+  display: flex;
+  justify-content: space-between;
+}
+@keyframes Animate-EN {
+  from {
+  width: 10px;
+}
+
+to {
+  width: 40%
+}
+}@-webkit-keyframes Animate-EN {
+  from {
+  width: 10px;
+}
+
+to {
+  width: 40%
+}
+
+}@-moz-keyframes Animate-EN {
+  from {
+  width: 10px;
+}
+
+to {
+  width: 40%
+}
+
+}@-o-keyframes Animate-EN {
+  from {
+  width: 10px;
+}
+
+to {
+  width: 30%
+}
+
+}.Skill-AreaLang {
+  z-index: 1;
+  float: left;
+  margin-top: 15px;
+  margin-left: 15px;
+  color: white;
+  font-family: 'Lato', sans-serif;
+  font-size: 18px;
+}
+
+.drapeau{
+  position: absolute;
+  left: -60px;
+  top: 5px;
+}
+
+.PercentTextLang {
+  padding-right: 15px;
+  margin-top: 15px;
+  color: white;
+  font-family: 'Lato', sans-serif;
+  font-size: 18px;
+}
+/* Fin Langues */
+
+/* exp.html */
+.boutonHaut a {
+display:flex;           /* Transformation en block */
+min-width: 260px;             /* Longeur minimale des liens */
+min-height: 50px;			        /* Largeur minimale des liens */
+position:fixed;
+justify-content: center;
+align-items: center;
+font-size:20px;
+margin: 0.5rem;               /* Marges externes */
+padding: 0.4rem 0;            /* Marges internes */
+background-color: #008800;      /* Arrière-plan */
+color: white;                 /* Couleur du texte */
+text-decoration: none;        /* Suppression du soulignement */
+border-radius: 4px;           /* Arrondis des bordures */
+font-family: Trebuchet MS;    /* Police */
+top:90%;
+}
+/* Fin exp.html */
+
+/* Compétences.html */
+.texte-comp,
+.texte-comp-grand {
+    font-size: 50px;
+}
+
+.texte-comp{
+    font-weight: bolder;
+    
+}
+
+.comp-align-centre{
+    text-align: center;
+    margin-top: 150px;
+    margin-bottom: 10px;
+    border-radius: 4px;
+    background-color:#008800;
+    color:white;   
+}
+
+.comp-align-gauche{
+  padding: 0 80px;
+  margin: 0;
+  margin-bottom: 10px;
+  border-radius: 4px;
+  background-color:white;
+  color:#008800; 
+}
+
+.certif {
+  display: flex;                /* Transformation en flexbox */
+  padding:0;                    /* Suppression des marges internes */
+	margin-left:120px;
+  min-width: 260px;             /* Longeur minimale des liens */
+  min-height: 50px;			        /* Largeur minimale des liens */
+
+}
+
+.certif a {
+  display:flex;                /* Transformation en block */
+  min-width: 280px;             /* Largeur minimale des liens */
+	min-height: 50px;
+	font-size:30px;
+	justify-content: center;
+  align-items: center;
+  margin: 0.5rem;               	/* Marges externes */
+  padding: 0.4rem 0;            	/* Marges internes */
+  text-align: center;           	/* Centrage du texte */   
+  background-color: white;      /* Arrière-plan */
+  color: #008800;               /* Couleur du texte */
+  text-decoration: none;        	/* Suppression du soulignement */
+  border: 2px solid #008800;       	/* Ajout d'une bordure */
+  border-radius: 4px;           	/* Arrondis des bordures */
+  transition: all 1s;          	  /* Ajout des effets de transition */
+	font-family: Trebuchet MS;    	/* Police */
+}
+
+.certif a:hover,				  	/* Effet du curseur de la souris sur les boutons du menu*/
+.certif a:hover.actif{
+    background-color:#008800;
+    color: white;
+    border-color: #008800;
+}
+
+.menuCREA {
+  display: flex;                /* Transformation en flexbox */
+  padding:0;                    /* Suppression des marges internes */
+  margin-left:120px;
+    }
+  .menuCREA li {
+  display:block;                /* Transformation en block */
+  width: 280px;            	 /* Largeur minimale des liens */
+  height: 40px;
+  font-size:30px;
+  justify-content: center;
+  align-items: center;
+  margin: 0.5rem;               /* Marges externes */
+  padding: 0.4rem 0;            /* Marges internes */
+  text-align: center;           /* Centrage du texte */   
+  background-color: white;  /* Arrière-plan */
+  color: #008800;                 /* Couleur du texte */
+  border: 2px solid #008800;       /* Ajout d'une bordure */
+  border-radius: 4px;           /* Arrondis des bordures */
+  font-family: Trebuchet MS;    /* Police */
+    }
+.menuCREA a {
+  color:#008800;
+  text-decoration:none;			/* Suppression du soulignement */
+    }
+  .sub-menuCREA {
+      transform: scale(0);
+      transform-origin: top center;
+      transition: all 300ms ease-in-out;
+  
+    }
+  .sub-menuCREA li {
+  border: none;      				 /* Ajout d'une bordure */
+      font-size: 20px;
+      background: none;
+      padding: 8px;
+      color: none;
+      transform: scale(0);
+      transform-origin: top center;
+      transition: all 300ms ease-in-out;
+  list-style-type: none;      	 /* Suppression des puces */
+    }
+  .sub-menuCREA li:last-child {
+      border-bottom: 0;
+    }
+
+  .menuCREA li:hover .sub-menuCREA li {
+      transform: scale(1);
+    }
+  .menuCREA li:hover .sub-menuCREA {
+      transform: scale(1);
+    }
+
+/* Fin compétences.html */
+  
+  footer {
+    padding: 50px 30px;
+    color: #777;
+    font-size: .8em;
+    margin-top: 30px;
+  }
+  
+  footer #footer-links {
+    float: right;
+    text-align: right;
+  }
+  
+  h1 {
+    font-family: 'Lato';
+    margin-top: 50px;
+    color: white;
+  }
+  
+  #top {
+    text-align: center;
+  }
+
+  .logo {
+    width: 65px;
+    display: inline-block;
+  }
+  
+  .logo img {
+    width: 100%;
+  }
+  
+  @media all and (max-width: 860px) {
+    
+    .container {
+      width: 500px;
+    }
+    
+  }
+  
+  @media all and (max-width: 560px) {
+    
+    .container {
+      width: 100%;
+    }
+    
+  }
+  
+  @media all and (max-width: 360px) {
+    
+    /* Header */
+    header .container { text-align: center; }
+    nav { float: none; }
+    
+    /* Footer */
+    footer .container { text-align: center; }
+    footer #footer-links { float: none; text-align: center; }
+  }

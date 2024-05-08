@@ -1,0 +1,105 @@
+html{
+    min-height: 100%;
+}
+
+body{
+	background-image:url("../Images/backCertif.png");
+	background-repeat: no-repeat;
+	background-position: auto;
+	background-attachment: fixed;
+    height: 100%;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    position: relative;
+}
+
+nav {
+    padding-top: 27px;
+	position: relative;
+	width: 100%;
+	height: 50px;
+	border-radius: 8px;
+	font-size: 0;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+nav a {
+	line-height: 50px;
+	height: 100%;
+	font-size: 15px;
+	display: inline-block;
+	position: relative;
+	z-index: 1;
+	text-decoration: none;
+	text-transform: uppercase;
+	text-align: center;
+	color: white;
+	cursor: pointer;
+    border-radius: 10px;
+    margin: 0 5px;
+    padding: 0 20px;
+    white-space: nowrap;
+}
+
+nav a:hover {
+    background-color: #ae4e69;
+}
+
+nav a.active {
+    background-color: #ae4e69;
+}
+
+footer {
+    padding: 50px 30px;
+    color: #777;
+    font-size: .8em;
+    margin-top: 730px;
+  }
+  
+  footer #footer-links {
+    float: right;
+    text-align: right;
+  }
+
+#top {
+    text-align: center;
+  }
+
+  .logo {
+    width: 65px;
+    display: inline-block;
+  }
+  
+  .logo img {
+    width: 100%;
+  }
+
+@media all and (max-width: 860px) {
+    
+    .container {
+      width: 500px;
+    }
+    
+  }
+  
+  @media all and (max-width: 560px) {
+    
+    .container {
+      width: 100%;
+    }
+    
+  }
+  
+  @media all and (max-width: 360px) {
+    
+    /* Header */
+    header .container { text-align: center; }
+    nav { float: none; }
+    
+    /* Footer */
+    footer .container { text-align: center; }
+    footer #footer-links { float: none; text-align: center; }
+  }
